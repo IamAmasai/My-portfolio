@@ -35,7 +35,9 @@ const skillsList = [
   "Business intelligence and analytics",
   "Cloud solutions architect",
   "Relational and Transformational leadership",
-  "",
+  "Theology and Christian apologetics",
+  "Public speaking",
+  "Music production",
 ];
 
 /**
@@ -44,7 +46,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I am passionate about solving problems and making a difference and seeing a better community and world, through innovation and transformational leadership.";
 
 const About = () => {
   return (
