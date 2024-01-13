@@ -1,9 +1,3 @@
-/**
-* CSS file to hold styles that apply across the application
-*/
-
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
-
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -12,6 +6,7 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+  background: #f5f5f5;
 }
 
 div#main {
@@ -23,70 +18,67 @@ div#main {
 section {
   position: relative;
   width: 100vw;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 section.min-height {
   min-height: 100vh;
 }
 
-section.padding {
-  padding: 5rem 0;
-}
-
 section img.background {
   height: 100%;
-  left: 50%;
+  left: 0;
   object-fit: cover;
-  pointer-events: none;
   position: absolute;
   top: 0;
-  transform: translate(-50%, 0);
-  width: 100vmax;
+  width: 100%;
   z-index: -1;
 }
 
 h1 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 7rem;
+  font-size: 3rem;
   font-weight: 400;
-  line-height: 0.8;
-  margin: 0;
+  color: #333;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  margin: 0;
-  padding-top: 1rem;
+  color: #666;
 }
 
 h3 {
   font-weight: 400;
   font-size: 1.25rem;
-  margin: 0;
+  color: #666;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.5;
-  margin-bottom: 0;
+  color: #666;
   font-weight: 300;
 }
 
 p.large {
-  font-size: 24px;
+  font-size: 1.2rem;
 }
 
 p.small {
-  font-size: 15px;
+  font-size: 0.8rem;
 }
 
 hr {
   margin: 2.5rem;
+  border: 0;
+  border-top: 1px solid #eee;
 }
 
 li {
   line-height: 1.7;
+  color: #666;
 }
 
 li::marker {
@@ -94,29 +86,29 @@ li::marker {
 }
 
 a {
-  color: black;
+  color: #4e567e;
   text-decoration: none;
 }
 
 a:hover {
-  color: #4e567e;
+  color: #333;
 }
 
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 330px 300px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 20px auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .container .box {
   border-radius: 10px;
-  border: 1px solid rgb(204, 204, 204);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  border: 1px solid #eee;
   padding: 24px 16px;
-  text-align: center;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 img.socialIcon {
