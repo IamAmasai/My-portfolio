@@ -20,7 +20,7 @@ import PropTypes from "prop-types";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/socials/IMG_0681.jpg";
+import image from "../images/socials/Africon.jpg";
 
 // Alt text for the image
 const imageAltText = "Juma Melchizedek Amasai";
